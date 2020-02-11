@@ -1,0 +1,14 @@
+{{#each @model as |player|}}
+    <div class="card" style="width: 18rem;">
+
+        <div class="card" style="width: 18rem;">
+            <!--img src="../assets/images/{{equipe.nom}}.png" hight="100px" class="card-img-top"-->
+            <div class="card-body">
+              <li>{{player.nom}}</li> 
+               <li>{{player.prenom}}</li>
+               <li>{{player.poste}}</li>
+            </div>
+        </div>
+
+    </div>
+{{/each}}

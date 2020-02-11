@@ -1,0 +1,18 @@
+<div class="col-md-4">
+    {{#each @model as |equipe|}}
+    <div class="card" style="width: 18rem;">
+
+        <div class="card" style="width: 18rem;">
+            <!--img src="../assets/images/{{equipe.nom}}.png" hight="100px" class="card-img-top"-->
+            <div class="card-body">
+               {{#link-to 'player' equipe   }}  <h5 class="card-title">{{equipe.nom}} {{equipe.ville}}</h5> {{/link-to}} 
+            </div>
+        </div>
+
+    </div>
+    {{/each}}
+
+</div>
+<div class="col-md-8">
+    {{outlet}}
+</div>

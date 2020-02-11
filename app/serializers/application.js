@@ -1,0 +1,10 @@
+import RESTSerializer from '@ember-data/serializer/rest';
+import JSONSerializer from '@ember-data/serializer/json';
+import { EmbeddedRecordsMixin } from '@ember-data/serializer/rest';
+
+export default class ApplicationSerializer extends RESTSerializer.extend(EmbeddedRecordsMixin) {
+
+
+}
+
+
